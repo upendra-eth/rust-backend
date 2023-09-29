@@ -1,3 +1,7 @@
 /target
 /*/target
 /*/*/target
+
+# Ignore all target directories
+**/target/
+
