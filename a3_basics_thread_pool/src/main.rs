@@ -21,7 +21,7 @@ fn main() {
                 // Handle the incoming connection in a separate thread or function.
                 // Here, you would typically read from and write to the `stream`.
                 println!(
-                    "------------------ram ram from google crome ----------------------------"
+                    "------------------ram ram from google chrome ----------------------------"
                 );
 
                 println!("2 - print ---- stream ------------ {:?}", stream);
@@ -49,7 +49,7 @@ fn handle_connection(mut stream: TcpStream) {
         "GET / HTTP/1.1" => ("HTTP/1.1 200 OK", "hello.html"),
         "GET /sleep HTTP/1.1" => {
             println!("sleepeeeeeed");
-            thread::sleep(Duration::from_secs(15));
+            thread::sleep(Duration::from_secs(60));
             println!("awake");
 
             ("HTTP/1.1 200 OK", "hello.html")
