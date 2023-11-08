@@ -1,0 +1,7 @@
+[build]
+target = "x86_64-unknown-linux-gnu"
+
+[env]
+"MY_APP_ENV"="production"
+
+"MY_APP_ENV"="production"{ value = "value", force = true }
